@@ -1,0 +1,40 @@
+.sidebar {
+    width: 250px;
+    height: calc(100vh - 50px); /* Subtract the height of the top bar */
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    top: 50px; /* Leave space for the top bar */
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.sidebar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.sidebar .menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
