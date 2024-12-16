@@ -11,7 +11,7 @@ export function useAuth() {
         setIsAuthenticated(jwt);
 
         // Redirect logic for protected routes
-        if (!jwt && router.pathname === '/calendar') {
+        if (!jwt && router.pathname === '/calendar' || router.pathname === '/account') {
             router.push('/login');
         }
 

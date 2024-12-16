@@ -1,0 +1,34 @@
+.topbar {
+    width: 99%;
+    height: 50px; /* Fixed height for the top bar */
+    background-color: #444;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+.topbar .logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.topbar .menu {
+    display: flex;
+    gap: 15px;
+}
+
+.topbar .menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.topbar .menu a:hover {
+    text-decoration: underline;
+}
