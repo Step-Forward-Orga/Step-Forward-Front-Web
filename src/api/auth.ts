@@ -16,6 +16,7 @@ export async function signUp(
         }
 
         const response = await axios.post(`${API_URL}/authentication/sign-up`, signUpData);
+        
         return response.data;
     } catch (error: any) {
         throw new Error(error.response?.data?.message || 'Registration failed');
